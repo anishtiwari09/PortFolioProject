@@ -500,7 +500,7 @@ body {
 }
 
 .etabs li span {
-  display: none;
+  display: block;
 }
 
 #tab-data-wrap {
@@ -658,7 +658,8 @@ body {
 
 .item-box .item-data p {
   margin: 0px;
-  font-size: 12px;
+  font-size: 16px;
+  padding:0.46rem;
   color: #2E8B57;
   text-decoration-style: bold;
 }
@@ -906,8 +907,9 @@ input[type=text], .project_description, input[type=url] {
   margin: 5px 26px;
   border: none;
   cursor: pointer;
-  width: 85%;
+  width: 35%;
   font-size:20px;
+  border-radius:0.4rem;
 }
 .project_submit:hover {
     opacity: 0.8;
@@ -944,7 +946,7 @@ input[type=text], .project_description, input[type=url] {
   background-color: #fefefe;
   margin: 1% auto 1% auto;
   border: 1px solid #888;
-  width: 30%;
+  width: 40%;
   padding-bottom: 20px;
 }
 
@@ -1064,6 +1066,45 @@ footer {
 footer p {
   margin-bottom: 0px;
 }
+/* my code */
+.skill-container{
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+  gap:10px;
+  
+  background-color: red;;
+  
+}
+.skill-container > div{
+  width:Calc(50% - 5px);
+  
+}
+
+.skills-g1{
+  display: block;
+  position: relative;
+  float:left;
+  
+  
+}
+
+.skills-g1 {
+  width: 100%;
+  margin:auto;
+}
+#contact-a{
+  width:96%;
+  margin:auto;
+  
+  display: flex;
+}
+
+#contact-a >.g1:nth-child(1){
+  padding-left:0.6rem;
+}
+
+ /* end*/
 
 /* media Queries
 
@@ -1076,6 +1117,17 @@ Change widths as necessary
 
 /* SMALL TABLET */
 @media only screen and (max-width: 600px) {
+  /* my code */
+  .skill-container{
+    display: flex;
+    width:50%;
+    flex-wrap: wrap;
+    gap:10px;
+  }
+  .skill-container > div{
+    width:100%;
+  }
+  /*end  */
 
   .etabs>li span {
     display: block;
@@ -1088,11 +1140,23 @@ Change widths as necessary
   .project-container {
     max-width: 200px;
   }
+  .modal-content {
+    
+    width: 90%;
+    
+  }
+  #contact-a{
+    width:96%;
+    margin:auto;
+    
+    display: block;
+    
+  }
   
 }
 
 /* TABLET/NETBOOK */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) {
 
   /* Sidebar */
   .sidebar {
@@ -1103,7 +1167,7 @@ Change widths as necessary
   /* COLUMN GRID */
   .g1, .g2, .g3 {
     /* display: inline; */
-    float: left;
+    float:left;
   }
 
   /* 2 COLUMN GRID */
@@ -1118,6 +1182,29 @@ Change widths as necessary
   .g3 {
     width: 98.0%
   }
+  .modal-content {
+    
+    width: 40%;
+    
+  } 
+  .modal-content {
+    background-color: #fefefe;
+    margin: 1% auto 1% auto;
+    border: 1px solid #888;
+    width: 35%;
+    padding-bottom: 20px;
+  }
+  #contact-a{
+    width:96%;
+    margin:auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #contact-a > .g1{
+    width:40%;
+  }
+
 }
 
 /* progress bar */
@@ -1201,6 +1288,15 @@ Change widths as necessary
   .g3 {
     width: 98.0%
   }
+  #contact-a{
+    width:96%;
+    margin:auto;
+    
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  
 }
 
 /* PRINT */
@@ -1309,4 +1405,83 @@ tbody {
 }
 .portfolio-link  span{
 color:#2E8B57;
+}
+
+
+/* my css */
+
+.etabs {
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.project-details-describe{
+  text-align: center;
+}
+.project-details-describe > p{
+  font-size:20px;
+  font-weight: bolder;
+  margin-top:1rem;
+
+  margin-bottom:0;
+}
+#resume .emerald img{
+  width:40px;
+  
+  
+
+}
+.emerald > span >span{
+  
+}
+.emerald > span{
+  display: flex;
+  background-color: white;
+  
+}
+.emerald > span  h5{
+
+
+padding: 0.45em;;
+padding-left: .2rem;
+text-align: center;
+
+}
+
+.flex{
+  width:80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.item-data img{
+  width:30px;
+  opacity:0.8;
+}
+.item-data img:hover{
+  
+  opacity:1;
+}
+.item-data{
+  display:flex;
+  gap:5px;
+  
+}
+.item-box .item-data p:hover{
+  
+  text-decoration: underline;
+  
+}
+
+.sny-icon-content img{
+  width:35px;
+  opacity:0.8;
+  margin-top:0.45rem;
+}
+.sny-icon-content img:hover{
+  width:40px;
+  opacity:0.8;
+  margin-top:0.55rem;
 }
