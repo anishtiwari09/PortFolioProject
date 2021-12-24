@@ -1152,7 +1152,9 @@ Change widths as necessary
     display: block;
     
   }
-  
+  #projectGreen{
+    margin-left:1.98rem;
+  }
   
 }
 
