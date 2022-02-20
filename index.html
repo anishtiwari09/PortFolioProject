@@ -319,16 +319,36 @@
               
               <div class="project-section">
                 <div style="padding:2rem;">
+                  <div class="project-container">
+                    <div class="project-img-container"
+                      onclick="document.getElementById('modal-wrapper1').style.display='block'">
+                      <img src="./images/floor3.png" alt="project image">
+                    </div>
+                    <p class="project-title">Sugar Cosmetics Clone</p>
+                    
+                  </div>
+                  <ul class="etab" style="text-align:center">
+                    <li class='tab portfolio-link'onclick="document.getElementById('modal-wrapper1').style.display='block'">
+                      <a>
+                        <i class="icon-user"></i>
+                        <span>
+                          View Details
+                      </span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                <div style="padding:2rem;">
                 <div class="project-container">
                   <div class="project-img-container"
-                    onclick="document.getElementById('modal-wrapper1').style.display='block'">
+                    onclick="document.getElementById('modal-wrapper2').style.display='block'">
                     <img src="./images/floor1.png" alt="project image">
                   </div>
                   <p class="project-title">BookMyShow Clone</p>
                   
                 </div>
                 <ul class="etab" style="text-align:center">
-                  <li class='tab portfolio-link'onclick="document.getElementById('modal-wrapper1').style.display='block'">
+                  <li class='tab portfolio-link'onclick="document.getElementById('modal-wrapper2').style.display='block'">
                     <a>
                       <i class="icon-user"></i>
                       <span>
@@ -341,14 +361,14 @@
                 <div>
                 <div class="project-container" id="projectGreen">
                   <div class="project-img-container"
-                    onclick="document.getElementById('modal-wrapper2').style.display='block'">
+                    onclick="document.getElementById('modal-wrapper3').style.display='block'">
                     <img src="./images/floor2.png" alt="project image">
                   </div>
                   <p class="project-title">Greenhouse.io</p>
                   
                 </div>
                 <ul class="etab" style="text-align: center;">
-                  <li class='tab portfolio-link'onclick="document.getElementById('modal-wrapper2').style.display='block'" >
+                  <li class='tab portfolio-link'onclick="document.getElementById('modal-wrapper3').style.display='block'" >
                     <a>
                       <i class="icon-user"></i>
                       <span>
@@ -364,12 +384,66 @@
 
 
               </div>
-              <div id="modal-wrapper1" class="modal">
+               <div id="modal-wrapper1" class="modal">
 
                 <form class="modal-content animate">
 
                   <div class="imgcontainer">
                     <span onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close"
+                      title="Close PopUp">&times;</span>
+                    <img src="images/floor3a.png" alt="project" class="avatar">
+                    <h1 class="project_details" style="text-align:center">Project Details</h1>
+                  </div>
+
+                  <div class="container">
+                   <div class="project-details-describe">
+                     <p style="padding-top:0.54rem;">Title</p>
+                    <input type="text" placeholder="Sugar Cosmetics" name="uname" readonly>
+                    </div>
+                    <div class="project-details-describe">
+                      <p>Description</p>
+                    <textarea class="project_description" rows="3"
+                      placeholder="SUGAR Cosmetics is a cruelty-free makeup brand that is high on style and higher on performance." readonly></textarea>
+                    </div>
+                    <div class="project-details-describe">
+                      <p>Tech Stack</p>
+                    <input type="text" placeholder="React Js, Redux, Material Ui, Style Composition, CSS " readonly>
+                    </div>
+                    <ul class="etabs">
+                      <li class='tab portfolio-link' id="tab-about">
+                        <a href="https://sugar-cosm.netlify.app/" target="_blank">
+                          <i class="icon-user"></i>
+                          <span>
+                            Visit Site
+                          </span>
+                        </a>
+                      </li>
+                      <li class='tab portfolio-link'>
+                        <a href="https://github.com/anishtiwari09/sugarCosmetics.git" target="_blank">
+                          <i class="icon-user"></i>
+                          <span>
+                            Goto github
+                          </span>
+                        </a>
+                      </li>
+
+
+                    </ul>
+                    <div class="project-details-describe">
+                    <button class="project_submit" type="submit" onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close">Close</button>
+                    </div>
+                  </div>
+
+
+                </form>
+
+              </div>
+              <div id="modal-wrapper2" class="modal">
+
+                <form class="modal-content animate">
+
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close"
                       title="Close PopUp">&times;</span>
                     <img src="images/floor1.png" alt="project" class="avatar">
                     <h1 class="project_details" style="text-align:center">Project Details</h1>
@@ -410,7 +484,7 @@
 
                     </ul>
                     <div class="project-details-describe">
-                    <button class="project_submit" type="submit" onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close">Close</button>
+                    <button class="project_submit" type="submit" onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close">Close</button>
                     </div>
                   </div>
 
@@ -418,12 +492,12 @@
                 </form>
 
               </div>
-              <div id="modal-wrapper2" class="modal">
+              <div id="modal-wrapper3" class="modal">
 
                 <form class="modal-content animate">
 
                   <div class="imgcontainer">
-                    <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close"
+                    <span onclick="document.getElementById('modal-wrapper3').style.display='none'" class="close"
                       title="Close PopUp">&times;</span>
                     <img src="images/floor2.png" alt="project" class="avatar">
                     <h1 class="project_details" style="text-align:center">Project Details
@@ -466,7 +540,7 @@
 
                     </ul>
                     <div class="project-details-describe">
-                    <button class="project_submit" type="submit" onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close">Close</button>
+                    <button class="project_submit" type="submit" onclick="document.getElementById('modal-wrapper3').style.display='none'" class="close">Close</button>
                     </div>
                   </div>
 
